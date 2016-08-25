@@ -61,7 +61,7 @@ a {
     font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
     background-color: @background;
     .navbar-toggle {
-        color: white;
+        color: @primary;
         font-size: 18px;
         padding: 12px 16px;
         margin: 0px;
@@ -78,7 +78,7 @@ a {
         }
     }
     a {
-        color: white;
+        color: @primary;
     }
     .nav {
         li {
@@ -87,7 +87,7 @@ a {
                 -moz-transition: background .3s ease-in-out;
                 transition: background .3s ease-in-out;
                 &:hover {
-                    color: fade(white, 60%);
+                    color: white;
                     outline: none;
                     background-color: transparent;
                 }
@@ -100,7 +100,7 @@ a {
             &.active {
                 outline: none;
                 a {
-                    background-color: fade(white, 10%);
+                    background-color: fade(white, 5%);
                     &:hover {
                         color: white;
                     }
@@ -185,7 +185,7 @@ a {
     padding: 7px 16px;
     border: 0 solid white;
     font-size: 56px;
-    color: white;
+    color: @primary;
     background: transparent;
     -webkit-transition: background .3s ease-in-out;
     -moz-transition: background .3s ease-in-out;
@@ -396,4 +396,8 @@ body {
         outline: none;
         color: fade(white, 12%);
     }
+}
+
+.prima {
+    color: @primary;
 }
