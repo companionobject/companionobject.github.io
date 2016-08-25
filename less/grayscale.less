@@ -132,15 +132,10 @@ a {
 
 .intro-header {
     font-family: "Maven Pro", "Helvetica Neue", Helvetica, Arial, sans-serif;
-    color: fade(white, 20%);
+    color: fade(white, 40%);
     text-transform: uppercase;
     padding: 14px 14px;
     font-size: 16px;
-    @media(min-width:768px) {
-        &.top-nav-collapse {
-            padding: 18px 18px;
-        }
-    }
 }
 
 .intro {
@@ -296,15 +291,15 @@ a {
 
 .btn-default {
     border: 1px solid;
-    color: fade(@primary, 50%);
-    border-color: fade(@primary, 15%);
+    color: @primary;
+    border-color: fade(white, 15%);
     background-color: transparent;
     &:hover,
     &:focus {
-        border: 1px solid;
-        border-color: fade(@primary, 75%);
         outline: none;
-        color: @primary;
+        border: 1px solid;
+        border-color: fade(white, 15%);
+        color: white;
         background-color: transparent;
     }
 }
@@ -390,11 +385,11 @@ body {
 }
 
 .trans {
-    font-size: 196px;
-    color: fade(white, 10%);
+    font-size: 224px;
+    margin: 16px;
+    color: fade(white, 15%);
     &:hover {
-        outline: none;
-        color: fade(white, 12%);
+        color: fade(white, 17%);
     }
 }
 
